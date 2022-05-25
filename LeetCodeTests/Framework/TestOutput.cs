@@ -2,7 +2,8 @@
 
 namespace LeetCodeTests.Framework
 {
-    public interface ITestOutput {
+    public interface ITestOutput
+    {
         Type ValueType { get; }
         object ValueRaw { get; }
     }

@@ -1,4 +1,5 @@
-﻿namespace LeetCodeTests.Framework {
+﻿namespace LeetCodeTests.Framework
+{
 
 	public interface ITestCase
 	{
@@ -14,7 +15,8 @@
 		public ITestInput InputBase => Input;
 		public ITestOutput OutputBase => Output;
 
-        public TestCase(TInput input, TOutput output) {
+		public TestCase(TInput input, TOutput output)
+		{
 			Input = input;
 			Output = output;
 		}

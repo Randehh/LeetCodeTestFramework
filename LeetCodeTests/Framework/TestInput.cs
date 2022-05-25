@@ -2,7 +2,8 @@
 
 namespace LeetCodeTests.Framework
 {
-    public interface ITestInput {
+    public interface ITestInput
+    {
         Type ValueType { get; }
     }
 
