@@ -9,7 +9,7 @@ namespace LeetCodeTests
     {
 
         //Simply replace this test with you rown test and run it!
-        private static ITestTemplateBase m_TestToRun = new TestTemplate();
+        private static ITestTemplateBase m_TestToRun = new NumberOfOneBits();
 
         private static void Main(string[] args)
         {
@@ -26,8 +26,8 @@ namespace LeetCodeTests
                     continue;
                 }
 
-                object result = m_TestToRun.Run(testCase);
-                if (Equals(result, testCase.OutputBase.ValueRaw))
+                ITestOutput result = m_TestToRun.Run(testCase);
+                if (Equals(result.ValueRaw, testCase.OutputBase.ValueRaw))
                 {
                     casesSucceeded.Add(i);
                     Console.WriteLine($"Test result {i}: Success.");
